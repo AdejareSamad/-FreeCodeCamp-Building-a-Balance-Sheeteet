@@ -9,10 +9,10 @@
 </head>
 <body>
     <main>
-        <header>
-            <h1>balance sheet</h1>
-            <h2>AcmeWidgetCorp</h2>
-            <ul>
+        <header id="header">
+            <h1 class="header-lg">balance sheet</h1>
+            <h2 class="header-md">AcmeWidgetCorp</h2>
+            <ul class="date">
                 <li>2019</li>
                 <li>2020</li>
                 <li>2021</li>
@@ -21,57 +21,127 @@
 
         <!-- Access section start -->
         <section>
-            <h3>assets</h3>
-            <div>
-                <p>Cash</p>
-                <ul>
+            <h3 class="header-sm">assets</h3>
+            <article>
+                <div class="stripe-light">
+                    <p>Cash</p>
+                <ul class="price-list">
                     <li>$25</li>
                     <li>$30</li>
                     <li>$28</li>
                 </ul>
-                <p>this is the cash we currently have on hand.</p>
-            </div>
+                </div>
+                
+                <p class="note">this is the cash we currently have on hand.</p>
+            </article>
             
-            <div>
-                <p>checking</p>
-                <ul>
+            <article>
+                <div class="stripe-light">
+                    <p>checking</p>
+                <ul class="price-list">
                     <li>$54</li>
                     <li>$56</li>
                     <li>$53</li>
                 </ul>
-                <p>our primary transactional account.</p>
-            </div>
+                </div>
+                
+                <p class="note">our primary transactional account.</p>
+            </article>
             
-            <div>
-                <p>savings</p>
-                <ul>
+            <article>
+                <div class="stripe-light">
+                    <p>savings</p>
+                <ul class="price-list">
                     <li>$500</li>
                     <li>$650</li>
                     <li>$728</li>
                 </ul>
-                <p>funds set aside for emergencies.</p>
-            </div>
+                </div>
+                
+                <p class="note">funds set aside for emergencies.</p>
+            </article>
 
-            <div>
-                <p>Total</p>
-                <ul>
+            <article>
+                <div class="total-price" tabindex="1">
+                    <p>Total</p>
+                <ul class="price-list">
                     <li>$579</li>
                     <li>$736</li>
                     <li>$809</li>
                 </ul>
-            </div>
+                </div>
+                
+            </article>
         </section>
         <!-- Access section end -->
+
+            <!-- Liabilities section start -->
+            <section>
+                <h3 class="header-sm">Liabilities</h3>
+                <article>
+                    <div class="stripe-light">
+                        <p>loans</p>
+                    <ul class="price-list">
+                        <li>$500</li>
+                        <li>$250</li>
+                        <li>$0</li>
+                    </ul>
+                    </div>
+                    
+                    <p class="note">the outstanding balance on our startup loan.</p>
+                </article>
+                
+                <article>
+                    <div class="stripe-light">
+                        <p>expenses</p>
+                    <ul class="price-list">
+                        <li>$200</li>
+                        <li>$300</li>
+                        <li>$400</li>
+                    </ul>
+                    </div>
+                    
+                    <p class="note">annual anticipated expenses, such as payroll.</p>
+                </article>
+                
+                <article>
+                    <div class="stripe-light">
+                        <p>credit</p>
+                    <ul class="price-list">
+                        <li>$50</li>
+                        <li>$50</li>
+                        <li>$75</li>
+                    </ul>
+                    </div>
+                    
+                    <p class="note">the runnng balance on your line of credit.</p>
+                </article>
+
+                <article>
+                    <div class="total-price" tabindex="2">
+                        <p>Total</p>
+                    <ul class="price-list">
+                        <li>$750</li>
+                        <li>$600</li>
+                        <li>$475</li>
+                    </ul>
+                    </div>
+                    
+                </article>
+            </section>
+        <!-- Liability section end -->
        
         <!-- Net worth section start -->
         <section>
-            <h3>net worth</h3>
+            <h3 class="header-sm">net worth</h3>
+            <div class="total-price" tabindex="3">
                 <p>Total</p>
-                <ul>
+                <ul class="price-list">
                     <li>-$171</li>
                     <li>$136</li>
                     <li>$334</li>
                 </ul>
+            </div>
             </div>
         </section>
         <!-- Net worth section end -->
